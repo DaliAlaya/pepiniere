@@ -1,0 +1,84 @@
+fos_user_security:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+
+fos_user_profile:
+    resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
+    prefix: /profile
+
+fos_user_register:
+    resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
+    prefix: /register
+
+fos_user_resetting:
+    resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
+    prefix: /resetting
+
+fos_user_change_password:
+    resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
+    prefix: /profile
+back_event:
+    resource: "@BackEventBundle/Resources/config/routing.yml"
+    prefix:   /event_back
+
+back_delivery:
+    resource: "@BackDeliveryBundle/Resources/config/routing.yml"
+    prefix:   /delivery_back
+
+back_sav:
+    resource: "@BackSavBundle/Resources/config/routing.yml"
+    prefix:   /sav_back
+
+back_cart:
+    resource: "@BackCartBundle/Resources/config/routing.yml"
+    prefix:   /cart_back
+
+back_marketing:
+    resource: "@BackMarketingBundle/Resources/config/routing.yml"
+    prefix:   /marketing_back
+
+front_delivery:
+    resource: "@FrontDeliveryBundle/Resources/config/routing.yml"
+    prefix:   /delivery_back
+
+front_event:
+    resource: "@FrontEventBundle/Resources/config/routing.yml"
+    prefix:   /event_front
+
+front_cart:
+    resource: "@FrontCartBundle/Resources/config/routing.yml"
+    prefix:   /cart_front
+
+front_sav:
+    resource: "@FrontSavBundle/Resources/config/routing.yml"
+    prefix:   /sav_front
+
+front_marketing:
+    resource: "@FrontMarketingBundle/Resources/config/routing.yml"
+    prefix:   /marketing_front
+
+back_product:
+    resource: "@BackProductBundle/Resources/config/routing.yml"
+    prefix:   /product_back
+
+front_product:
+    resource: "@FrontProductBundle/Resources/config/routing.yml"
+    prefix:   /product_front
+hwi_oauth_security:
+    resource: "@HWIOAuthBundle/Resources/config/routing/login.xml"
+    prefix: /connect
+
+hwi_oauth_connect:
+    resource: "@HWIOAuthBundle/Resources/config/routing/connect.xml"
+    prefix: /connect
+
+hwi_oauth_redirect:
+    resource: "@HWIOAuthBundle/Resources/config/routing/redirect.xml"
+    prefix:   /connect
+
+facebook_login:
+    path: /connect/check-facebook
+google_login:
+    path: /login/check-google
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

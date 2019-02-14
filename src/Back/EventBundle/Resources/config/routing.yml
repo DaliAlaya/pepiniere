@@ -1,0 +1,3 @@
+back_event_homepage:
+    path:     /
+    defaults: { _controller: BackEventBundle:Default:index }

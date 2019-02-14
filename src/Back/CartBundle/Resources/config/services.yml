@@ -1,0 +1,4 @@
+services:
+#    back_cart.example:
+#        class: Back\CartBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

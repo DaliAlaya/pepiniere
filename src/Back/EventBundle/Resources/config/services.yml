@@ -1,0 +1,4 @@
+services:
+#    back_event.example:
+#        class: Back\EventBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
